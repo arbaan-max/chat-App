@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "374879944153",
+    "project_id": "flutter-chart-3f120",
+    "storage_bucket": "flutter-chart-3f120.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374879944153:android:a9fbe604e3b7e0a889adc8",
+        "android_client_info": {
+          "package_name": "com.example.my_chart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374879944153-hj2m95n4dco110b3a432naeu17tkqvbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYyBml67gKI3FACFpMWDIU8VQmibY4Q5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374879944153-hj2m95n4dco110b3a432naeu17tkqvbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
