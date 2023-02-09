@@ -3,6 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:my_chart/main.dart';
 
 class NewMessages extends StatefulWidget {
   const NewMessages({super.key});
@@ -25,12 +28,29 @@ class _NewMessagesState extends State<NewMessages> {
     _controller.clear();
   }
 
+
+    void showNotification() {
+    setState(() {
+      _enteredMessege;
+    });
+    flutterLocalNotificationsPlugin.show(
+        0,
+        "Count $_enteredMessege",
+        "How you doin ?",
+        NotificationDetails(
+            android: AndroidNotificationDetails(channel.id, channel.name,
+                channelDescription: channel.description,
+                importance: Importance.high,
+                color: Colors.blue,
+                playSound: true,
+                icon: '@mipmap/ic_launcher')));
+  }
+
   @override
   void dispose() {
     super.dispose();
     _controller.dispose();
   }
-
   @override
   Widget build(BuildContext context) {
     return Container(
