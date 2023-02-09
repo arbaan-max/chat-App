@@ -29,22 +29,22 @@ class _NewMessagesState extends State<NewMessages> {
   }
 
 
-    void showNotification() {
-    setState(() {
-      _enteredMessege;
-    });
-    flutterLocalNotificationsPlugin.show(
-        0,
-        "Count $_enteredMessege",
-        "How you doin ?",
-        NotificationDetails(
-            android: AndroidNotificationDetails(channel.id, channel.name,
-                channelDescription: channel.description,
-                importance: Importance.high,
-                color: Colors.blue,
-                playSound: true,
-                icon: '@mipmap/ic_launcher')));
-  }
+  //   void showNotification() {
+  //   setState(() {
+  //     _enteredMessege;
+  //   });
+  //   flutterLocalNotificationsPlugin.show(
+  //       0,
+  //       "Count $_enteredMessege",
+  //       "How you doin ?",
+  //       NotificationDetails(
+  //           android: AndroidNotificationDetails(channel.id, channel.name,
+  //               channelDescription: channel.description,
+  //               importance: Importance.high,
+  //               color: Colors.blue,
+  //               playSound: true,
+  //               icon: '@mipmap/ic_launcher')));
+  // }
 
   @override
   void dispose() {
